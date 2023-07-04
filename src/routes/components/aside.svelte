@@ -1,6 +1,4 @@
 <section class="section-aside">
-
-
     <div class="personal-details">
         <h1>Alvin Meroy</h1>
         <h3>Keyboard Tapper</h3>
@@ -14,3 +12,11 @@
         </ul>
     </div> 
 </section>
+
+<style>
+    @media screen and (min-width: 768px) {
+        .section-aside {
+            position: fixed;
+        }
+    }
+</style>
