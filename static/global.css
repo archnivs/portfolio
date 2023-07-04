@@ -1,8 +1,43 @@
+:root {
+    --primary-color: #272838;
+    --secondary-color: #5D536B;
+    --text-color: #989FCE;
+    --accent: #347FC4;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--accent);
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+p {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
 .container {
     padding: 1.2rem;
     margin: 1rem auto;
-    max-width: 960px;
+    max-width: 1280px;
     width: 96%;
+}
+
+.section-wrapper {
+    margin: 1.6rem auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -10,5 +45,19 @@
         width: 100%;
         height: 100vh;
         display: flex;
+    }
+
+    .section-wrapper {
+        min-height: 600px;
+        padding: 0 0 0 2.4rem;
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        border-image: 
+            linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0),
+            var(--accent), 
+            rgba(0, 0, 0, 0)
+            ) 1 100%;
     }
 }

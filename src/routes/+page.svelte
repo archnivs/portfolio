@@ -24,11 +24,14 @@
     }
 
     @media screen and (min-width: 768px) {
+        #wrap {
+            margin-top: 4em;
+        }
         .aside {
-            width: 40%;
+            width: 33%;
         }
         .content {
-            width: 60%;
+            width: 66%;
         }
     }
 </style>
