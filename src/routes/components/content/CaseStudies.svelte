@@ -1,4 +1,4 @@
-<section class="section-wrapper section-case-studies">
+<section id="case-studies" class="section-wrapper section-case-studies">
     <h3>Case Studies</h3>
     <p>Non anim Lorem in officia occaecat nostrud nulla. Irure cupidatat laboris fugiat mollit amet consectetur elit ullamco laboris enim enim eu sit nisi. Dolor elit esse dolor et amet. Veniam sit anim dolor nulla magna incididunt ad deserunt sunt ea. Aute qui anim irure aliquip tempor consequat. Anim in enim nostrud eu eu.</p>
 

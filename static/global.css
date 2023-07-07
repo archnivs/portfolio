@@ -48,8 +48,9 @@ p {
     }
 
     .section-wrapper {
-        min-height: 600px;
+        min-height: 700px;
         padding: 0 0 0 2.4rem;
+        margin-bottom: 6rem;
         border-width: 0 0 0 1px;
         border-style: solid;
         border-image: 
@@ -57,6 +58,9 @@ p {
             to bottom, 
             rgba(0, 0, 0, 0),
             var(--accent), 
+            var(--accent), 
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0),
             rgba(0, 0, 0, 0)
             ) 1 100%;
     }
