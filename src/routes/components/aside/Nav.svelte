@@ -1,4 +1,10 @@
 <script>
+    import { onMount } from 'svelte';
+
+    function setActiveNav(all_nav_li, active_li) {
+        all_nav_li.forEach( li => { li.classList.remove(`active`);}  );
+        active_li.classList.add('active');
+    }
     function scrollIntoView({ target }) {
 		const el = document.querySelector(target.getAttribute('href'));
         const all_nav_li = document.querySelectorAll('.nav-li');
@@ -8,16 +14,34 @@
             behavior: 'smooth',
             block: 'center',
         });
-        all_nav_li.forEach( li => { li.classList.remove(`active`);}  );
-        parent_a.classList.add('active');
+        setActiveNav(all_nav_li, parent_a);
      }
+
+    onMount(()=> {
+        window.onscroll = () => {
+            const sections = document.querySelectorAll(".section-wrapper");
+            const all_nav_li = document.querySelectorAll('.nav-li');
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                    const el = document.querySelector("#nav-" + section.getAttribute("id"));
+                    setActiveNav(all_nav_li, el);
+                }
+            });
+        }
+    })
+
+    
 </script>
+
+
 
 <div class="nav main-nav">
     <ul>
-        <li class="nav-li active "><a href="#about" on:click|preventDefault={scrollIntoView}>About</a></li>
-        <li class="nav-li "><a href="#experiences" on:click|preventDefault={scrollIntoView}>Experiences</a></li>
-        <li class="nav-li "><a href="#case-studies" on:click|preventDefault={scrollIntoView}>Case Studies</a></li>
+        <li id="nav-about" class="nav-li active "><a href="#about" on:click|preventDefault={scrollIntoView}>About</a></li>
+        <li id="nav-experiences" class="nav-li "><a href="#experiences" on:click|preventDefault={scrollIntoView}>Experiences</a></li>
+        <li id="nav-case-studies" class="nav-li "><a href="#case-studies" on:click|preventDefault={scrollIntoView}>Case Studies</a></li>
     </ul>
 </div> 
 
