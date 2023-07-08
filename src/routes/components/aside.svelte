@@ -17,5 +17,9 @@
             position: fixed;
             width: 30%;
         }
+
+        .personal-details {
+            margin-bottom: 6rem;
+        }
     }
 </style>

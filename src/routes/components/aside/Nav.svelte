@@ -6,6 +6,7 @@
 		if (!el) return;
         el.scrollIntoView({
             behavior: 'smooth',
+            block: 'center',
         });
         all_nav_li.forEach( li => { li.classList.remove(`active`);}  );
         parent_a.classList.add('active');
@@ -15,8 +16,8 @@
 <div class="nav main-nav">
     <ul>
         <li class="nav-li active "><a href="#about" on:click|preventDefault={scrollIntoView}>About</a></li>
-        <li class="nav-li "><a href="#experiences" on:click|preventDefault={scrollIntoView}>Experience</a></li>
-        <li class="nav-li "><a href="#case-studies" on:click|preventDefault={scrollIntoView}>Case Study</a></li>
+        <li class="nav-li "><a href="#experiences" on:click|preventDefault={scrollIntoView}>Experiences</a></li>
+        <li class="nav-li "><a href="#case-studies" on:click|preventDefault={scrollIntoView}>Case Studies</a></li>
     </ul>
 </div> 
 
@@ -29,21 +30,28 @@
     }
 
     .main-nav ul li {
-        padding: 2rem 0;
+        padding: 1rem 0 1rem 2rem;
         position: relative;
+        margin-bottom: 3rem;
     }
 
-    .main-nav ul li.active::after {
+    .main-nav ul li::after {
         content: '';
-        border-width: 32px 24px 32px 10px;
-        border-color: Transparent var(--accent) transparent transparent;
-        border-style: solid;
+        border-radius: 6px;
+        width: 2px;
+        height: 100%;
+        max-height: 0;
+        background-color: var(--accent);
         display: block;
         position: absolute;
-        right: 0;
+        left: 0;
         top: 50%;
         transform: translateY(-50%);
         transition: all 0.3s linear;
+    }
+
+    .main-nav ul li.active::after {
+        max-height: 6rem;
     }
 
     .main-nav ul li a {
