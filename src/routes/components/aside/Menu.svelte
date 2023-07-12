@@ -14,7 +14,7 @@
             behavior: 'smooth',
             block: 'start',
         });
-        setActiveNav(all_nav_li, parent_a);
+        //setActiveNav(all_nav_li, parent_a);
      }
 
     onMount(()=> {
@@ -46,6 +46,10 @@
 </div> 
 
 <style>
+    .main-nav {
+        margin-bottom: 5rem;
+    }
+
     .main-nav ul {
         list-style: none;
         margin: 0;
@@ -54,9 +58,10 @@
     }
 
     .main-nav ul li {
-        padding: 1rem 0 1rem 2rem;
+        padding: 1rem 0 1rem 0;
         position: relative;
         margin-bottom: 3rem;
+        transition: all 200ms linear;
     }
 
     .main-nav ul li::after {
@@ -71,7 +76,11 @@
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        transition: all 0.3s linear;
+        transition: all 300ms linear;
+    }
+
+    .main-nav ul li.active {
+        padding-left: 2rem;
     }
 
     .main-nav ul li.active::after {

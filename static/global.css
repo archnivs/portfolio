@@ -1,8 +1,13 @@
 :root {
-    --primary-color: #191716;
+    /* --primary-color: #191716;
     --secondary-color: #E0E2DB;
     --text-color: #BEB7A4;
-    --accent: #E6AF2E;
+    --accent: #E6AF2E; */
+    --primary-color: #13161C;
+    --secondary-color: #F0F2EC;
+    --text-color: #c7c7c7;
+    --accent: #00A4FC;
+    --accent-2: #7CC4CD;
 }
 body {
     font-family: 'Open Sans', sans-serif;
@@ -78,6 +83,22 @@ p {
 
 .section-title {
     margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 1rem 2.4rem;
+    background-color: var(--accent);
+    color: var(--primary-color);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--accent);
+    border-color: var(--accent);
 }
 
 @media screen and (min-width: 768px) {

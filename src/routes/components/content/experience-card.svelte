@@ -1,6 +1,5 @@
 <script>
     export let experience = [];
-    console.log(experience);
 </script>
 
 <div class="experience-card card">
@@ -44,7 +43,7 @@
 
     .technology .tech-item {
         padding: 0.4rem 1.5rem;
-        background-color: var(--secondary-color);
+        background-color: var(--accent-2);
         color: var(--primary-color);
         border-radius: 20px;
         font-size: 14px;    
