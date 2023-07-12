@@ -15,8 +15,13 @@
 </section>
 
 <style>
+    .section-aside {
+        display: none;
+    }
+
     @media screen and (min-width: 768px) {
         .section-aside {
+            display: block;
             position: fixed;
             width: 30%;
         }
