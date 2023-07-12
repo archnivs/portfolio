@@ -1,0 +1,137 @@
+:root {
+    /* --primary-color: #191716;
+    --secondary-color: #E0E2DB;
+    --text-color: #BEB7A4;
+    --accent: #E6AF2E; */
+    --primary-color: #13161C;
+    --secondary-color: #F0F2EC;
+    --text-color: #c7c7c7;
+    --accent: #00A4FC;
+    --accent-2: #7CC4CD;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.375rem;
+    font-weight: 100;
+    line-height: 1.4;
+    letter-spacing: -0.025em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.4;
+    letter-spacing: -0.025em;
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+h4 {
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+h6 {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--text-color);
+}
+
+p {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.container {
+    padding: 1.2rem;
+    margin: 1rem auto;
+    max-width: 1280px;
+    width: 96%;
+}
+
+.section-wrapper {
+    margin: 1.6rem auto;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 1rem 2.4rem;
+    background-color: var(--accent);
+    color: var(--primary-color);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+    .section-wrapper {
+        min-height: 700px;
+        padding: 0 0 0 2.4rem;
+        margin-bottom: 6rem;
+        border-width: 0 0 0 1px;
+        border-style: solid;
+        border-image: 
+            linear-gradient(
+            to bottom, 
+            rgba(0, 0, 0, 0),
+            var(--accent), 
+            var(--accent), 
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0)
+            ) 1 100%;
+    }
+}
+
+.card {
+    border-radius: 1.5rem;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgb(255,255,255);
+    background: linear-gradient(160deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0.1) 100%);
+    margin-bottom: 2rem;
+}
