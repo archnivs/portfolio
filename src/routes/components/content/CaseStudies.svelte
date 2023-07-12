@@ -1,5 +1,5 @@
 <section id="case-studies" class="section-wrapper section-case-studies">
-    <h3>Case Studies</h3>
+    <h3 class="section-title">Case Studies</h3>
     <p>Non anim Lorem in officia occaecat nostrud nulla. Irure cupidatat laboris fugiat mollit amet consectetur elit ullamco laboris enim enim eu sit nisi. Dolor elit esse dolor et amet. Veniam sit anim dolor nulla magna incididunt ad deserunt sunt ea. Aute qui anim irure aliquip tempor consequat. Anim in enim nostrud eu eu.</p>
 
     <p>Deserunt deserunt laborum aliqua in eiusmod dolore tempor eu adipisicing et. Est adipisicing tempor Lorem veniam quis ut reprehenderit. Ex nisi qui aliquip Lorem labore labore occaecat excepteur deserunt ea ullamco in. Dolor et excepteur aliqua occaecat velit occaecat culpa amet esse eu esse amet tempor irure. Irure amet nisi minim duis laboris laboris velit non non ipsum incididunt incididunt. Consectetur adipisicing do ea eu ad Lorem sit in reprehenderit commodo eiusmod reprehenderit deserunt ad. Duis quis exercitation do officia id esse Lorem eu qui eiusmod ipsum dolor.</p>

@@ -1,14 +1,14 @@
 <script>
-	import Nav from './aside/Nav.svelte'
+	import Menu from './aside/Menu.svelte'
 </script>
 
 <section class="section-aside">
     <div class="personal-details">
         <h1>Alvin Meroy</h1>
-        <h3>Keyboard Tapper</h3>
+        <h2>Keyboard Tapper</h2>
     </div>
 
-    <Nav />
+    <Menu />
 </section>
 
 <style>

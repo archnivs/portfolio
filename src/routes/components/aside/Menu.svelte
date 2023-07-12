@@ -12,7 +12,7 @@
 		if (!el) return;
         el.scrollIntoView({
             behavior: 'smooth',
-            block: 'center',
+            block: 'start',
         });
         setActiveNav(all_nav_li, parent_a);
      }
