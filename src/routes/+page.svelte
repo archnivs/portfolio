@@ -18,7 +18,7 @@
     .aside,
     .content {
         width: 100%;
-        padding: 1rem;
+        padding: 0;
         flex-grow: 1;
         flex-wrap: wrap;
     }

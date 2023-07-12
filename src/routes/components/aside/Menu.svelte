@@ -48,6 +48,13 @@
 <style>
     .main-nav {
         margin-bottom: 5rem;
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        .main-nav {
+            display: block;
+        }
     }
 
     .main-nav ul {

@@ -16,18 +16,26 @@
 
 <style>
     .section-aside {
+        text-align: center;
+    }
+
+    .btn-cv {
         display: none;
     }
 
     @media screen and (min-width: 768px) {
         .section-aside {
-            display: block;
+            text-align: inherit;
             position: fixed;
             width: 30%;
         }
 
         .personal-details {
             margin-bottom: 6rem;
+        }
+
+        .btn-cv {
+            display: inline-block;
         }
     }
 </style>
