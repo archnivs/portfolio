@@ -39,7 +39,7 @@
             'start_date': 'Feb 2016',
             'end_date': 'May 2020',
             'position': 'Web Developer',
-            'description': '- Develop a Wordpress theme which is designed by the company’s web designer.<br- Develop a custom plugin that will fill the gap of the features the website needs.',
+            'description': '- Develop a Wordpress theme which is designed by the company’s web designer.<br>- Develop a custom plugin that will fill the gap of the features the website needs.',
             'technology': ['WordPress', 'PHP', 'Javascript', 'CSS', 'HTML'],
         },
     ];
