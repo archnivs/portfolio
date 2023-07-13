@@ -39,7 +39,7 @@
 
 <div class="nav main-nav">
     <ul>
-        <li id="nav-about" class="nav-li active "><a href="#about" on:click|preventDefault={scrollIntoView}>About</a></li>
+        <li id="nav-about" class="nav-li active"><a href="#about" on:click|preventDefault={scrollIntoView}>About</a></li>
         <li id="nav-experiences" class="nav-li "><a href="#experiences" on:click|preventDefault={scrollIntoView}>Experiences</a></li>
         <li id="nav-case-studies" class="nav-li "><a href="#case-studies" on:click|preventDefault={scrollIntoView}>Case Studies</a></li>
     </ul>

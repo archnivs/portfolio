@@ -1,5 +1,6 @@
 <script>
     import Fa from 'svelte-fa';
+    import { faDownload } from '@fortawesome/free-solid-svg-icons';
 	import Menu from './aside/Menu.svelte';
 	import SocialMedia from './aside/Social-Media.svelte';
     import myCV from '$lib/Alvin-Meroy-CV-.pdf';
@@ -13,7 +14,7 @@
 
     <Menu />
 
-    <a class="btn-cv btn" target="_blank" href="{myCV}">Download my CV</a>
+    <a class="btn-cv btn" target="_blank" href="{myCV}">Download my CV <Fa icon={faDownload} translateX={0.5} size="lg" /></a>
 
     <SocialMedia />
 </section>

@@ -48,6 +48,6 @@
     .social-media-links {
         margin-top: 4rem;
         display: flex;
-        gap: 2rem;
+        gap: 2.6rem;
     }
 </style>
