@@ -1,5 +1,6 @@
 <script>
 	import Menu from './aside/Menu.svelte';
+	import SocialMedia from './aside/Social-Media.svelte';
     import myCV from '$lib/Alvin-Meroy-CV-.pdf';
 </script>
 
@@ -12,6 +13,8 @@
     <Menu />
 
     <a class="btn-cv btn" target="_blank" href="{myCV}">Download my CV</a>
+
+    <SocialMedia />
 </section>
 
 <style>

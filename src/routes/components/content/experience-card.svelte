@@ -30,7 +30,7 @@
     }
 
     .experience-card .description {
-        margin-bottom: 1rem;
+        margin-bottom: 1.6rem;
         line-height: 1.6;
     }
 
