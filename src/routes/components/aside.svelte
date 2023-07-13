@@ -1,4 +1,5 @@
 <script>
+    import Fa from 'svelte-fa';
 	import Menu from './aside/Menu.svelte';
 	import SocialMedia from './aside/Social-Media.svelte';
     import myCV from '$lib/Alvin-Meroy-CV-.pdf';
