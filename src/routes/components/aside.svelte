@@ -8,7 +8,7 @@
 <section class="section-aside">
     <div class="personal-details">
         <h1>Alvin Meroy</h1>
-        <h2>Keyboard Tapper</h2>
+        <h2>Web Developer</h2>
     </div>
 
     <Menu />

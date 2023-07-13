@@ -1,5 +1,6 @@
 <script>
     import Fa from 'svelte-fa';
+    import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
     import { 
         faGithub,
         faCodepen,
@@ -22,6 +23,11 @@
             'label': 'LinkedIn',
             'icon': faLinkedin,
             'link': 'https://www.linkedin.com/in/alvinmeroy/',
+        },
+        {
+            'label': 'Email',
+            'icon': faEnvelope,
+            'link': 'mailto:archnivs@gmail.com',
         },
     ];
 </script>
