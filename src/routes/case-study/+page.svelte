@@ -1,4 +1,7 @@
-
+<script>
+    /** @type {import('./$types').PageData} */
+    export let data;
+</script>
 
 <div id="wrap">
     <div class="container">
@@ -6,7 +9,7 @@
             <h1>Case Study</h1>
         </div>
         <div class="content">
-            <p>TODO...</p>
+            {data}
         </div>
     </div>
 </div>
